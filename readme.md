@@ -16,6 +16,13 @@
 
 **3. Check the `no-recoil-prices` channel.** 💰
 
+<div align="center">
+
+![How To Get It](image_1.jpg)
+
+</div>
+
+
 ---
 
 > **Take control of your aim!** This Logitech G Hub script **eliminates recoil** in PUBG, giving you a smoother shooting experience while staying fully customizable. 🎯🔥
