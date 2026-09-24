@@ -3,7 +3,7 @@
 
 <div align="center">
 
-<iframe width="960" height="540" src="https://www.youtube.com/embed/3i3SNICVz7o" title="PUBG No Recoil Script" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+[![PUBG No Recoil Demo Video](https://img.youtube.com/vi/3i3SNICVz7o/maxresdefault.jpg)](https://youtu.be/3i3SNICVz7o)
 
 </div>
 
