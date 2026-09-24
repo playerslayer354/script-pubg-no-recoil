@@ -1,4 +1,3 @@
-
 # 🎯 PUBG Logitech No Recoil Script
 
 <div align="center">
@@ -94,3 +93,106 @@ Modify in the script:
 
 ```lua
 local SensSetting = 1.0  -- Adjust for different sensitivities
+```
+
+### 🖱️ Changing Key Bindings
+
+Modify these values to set custom activation buttons:
+
+```lua
+local AKM = 4   -- Change to preferred button
+local M416 = 5  -- Assign another weapon key
+```
+
+Find button IDs in **Logitech G Hub → Key Assignments**.
+
+### 🎛️ Adjust Recoil Dynamically (For PUBG Script Users)
+
+Increase or decrease recoil control while playing using **Logitech G Keys**:
+
+```lua
+if (event == "G_PRESSED" and arg == 8) then  -- G8 increases recoil control
+    SensSetting = SensSetting + 0.05
+    OutputLogMessage("Increased Recoil Compensation: " .. SensSetting .. "\n")
+end
+
+if (event == "G_PRESSED" and arg == 9) then  -- G9 decreases recoil control
+    SensSetting = SensSetting - 0.05
+    OutputLogMessage("Decreased Recoil Compensation: " .. SensSetting .. "\n")
+end
+```
+
+🔹 Press **G8** to increase recoil control  
+🔹 Press **G9** to decrease recoil control  
+🔹 No need to restart the script! 🎯
+
+💡 **Tip:** You can change `arg == 8` or `arg == 9` to any **G-key** on your Logitech keyboard/mouse. Just replace the number with your preferred keybinding.
+
+---
+
+## 🎛️ Dynamic Recoil Adjustment (Test Needed)
+
+- Get the **[PUBG_Simple_NoRecoil_Adjustable.lua](https://share.google/MjHs08EoIzvvXw9un)** script.
+- Open **Logitech G Hub** → Click on your **PUBG profile**.
+- Go to **Scripting** (bottom left) → Click **Create New Lua Script**.
+- **Paste the script** into the editor and **Save**
+
+---
+
+This script allows you to **increase or decrease recoil compensation in real-time** using **Mouse Side Buttons 4 & 5**:
+
+```lua
+if (event == "MOUSE_BUTTON_PRESSED" and arg == 4) then  -- Side Button 1 (Increase recoil control)
+    SensSetting = SensSetting + 0.05
+    OutputLogMessage("Increased Recoil Compensation: " .. SensSetting .. "\n")
+end
+
+if (event == "MOUSE_BUTTON_PRESSED" and arg == 5) then  -- Side Button 2 (Decrease recoil control)
+    SensSetting = SensSetting - 0.05
+    OutputLogMessage("Decreased Recoil Compensation: " .. SensSetting .. "\n")
+end
+```
+
+🔹 Press **Mouse Button 4** to increase recoil control  
+🔹 Press **Mouse Button 5** to decrease recoil control  
+🔹 No need to restart the script! 🎯
+
+💡 **Tip:** You can change `arg == 4` or `arg == 5` to any **mouse button you prefer**. Just replace the number with your chosen keybinding.
+
+---
+
+## 🛠️ Troubleshooting
+
+### ❌ Script Not Working?
+
+🔹 Ensure **Logitech G Hub** is installed and running.  
+🔹 Check if **Lua scripting is enabled** in G Hub.  
+🔹 Assign the script to **PUBG’s profile**.  
+🔹 Try **running G Hub as administrator**.
+
+### 🎯 Recoil Feels Off?
+
+🔹 Adjust the `SensSetting` value in the script:
+
+```lua
+local SensSetting = 1.0 -- Modify this based on your in-game sensitivity
+```
+
+🔹 Match **PUBG’s in-game sensitivity** settings.  
+🔹 Test different **mouse DPI settings**.
+
+### 🔄 Logitech G Hub Not Detecting the Script?
+
+🔹 **Restart G Hub** and re-enable scripting.  
+🔹 **Reinstall G Hub** if issues persist.  
+🔹 **Delete & re-import** the script.
+
+---
+
+## 📜 License
+
+🆓 **Open-source & free to use** – Provided as-is without warranties. Use responsibly!
+
+---
+
+💡 **Enjoy smooth aim and no recoil in PUBG!** 🎯🔥
